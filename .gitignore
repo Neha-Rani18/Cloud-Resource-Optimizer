@@ -1,5 +1,28 @@
+# Ignore Python cache and compiled files
 __pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore virtual environments
 venv/
-*.zip
-*.log
-.env
+.env/
+
+# Ignore dependencies (they should be installed via requirements.txt)
+*.egg-info/
+*.dist-info/
+*.whl
+*boto3/
+*botocore/
+
+
+# Ignore AWS credentials and config (DO NOT COMMIT AWS SECRETS)
+.aws/
+*.pem
+
+# Ignore Lambda deployment package
+lambda_package.zip
+
+# Ignore system files (Windows & macOS)
+.DS_Store
+Thumbs.db
