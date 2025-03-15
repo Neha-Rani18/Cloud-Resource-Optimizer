@@ -39,6 +39,11 @@ Navigate to the project folder and install required Python libraries:
 ```sh
 pip install -r requirements.txt -t .
 ```
+Ensure that requirements.txt contains the necessary dependencies such as:
+```sh
+boto3
+botocore
+```
 
 ### 3. Package and Deploy to AWS Lambda
 Zip your project files:
